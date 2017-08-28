@@ -35,7 +35,7 @@ app.get('/employed', function (req, res) {
   MongoClient.connect(mongoURL, function (err, db) {
     const robots = db.collection('robots');
     robots.find({"job": {$nin: [null]}}).toArray(function (err, docs) {
-      res.render("unemployed", {robots: docs})
+      res.render("employed", {robots: docs})
     })
   })
 })
