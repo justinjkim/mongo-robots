@@ -7,6 +7,11 @@ const mongoURL = 'mongodb://localhost:27017/newdb';
 
 const app = express();
 
+app.engine('mustache', mustache());
+app.set('view engine', 'mustache');
+app.set('views', './views');
+app.use(express.static(__dirname + '/public'));
+
 
 app.use('/', function (req, res) {
   MongoClient.connect(mongoURL, function (err, db) {
