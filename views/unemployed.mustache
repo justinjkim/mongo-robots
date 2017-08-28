@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<title>MongoDB - Robots Available for Hire</title>
+ 	</head>
+
+ 	<body>
+    <div>
+      <!-- this goes through the robots.json file -->
+    {{#robots}}
+      <div>
+        <img src="{{avatar}}">
+        <a href="/index/{{username}}"><h2>{{name}}</h2></a>
+        
+        {{^job}}
+          <p>Available for Hire</p>
+        {{/job}}
+      </div>
+    {{/robots}}
+  </div>
+ 	</body>
+ </html>

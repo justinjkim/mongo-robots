@@ -5,7 +5,9 @@
  	</head>
 
  	<body>
-    <div class="people-list">
+    <a href="unemployed">Robots Looking for Work</a>
+    <a href="employed">Robots Already Working</a>
+    <div>
       <!-- this goes through the robots.json file -->
     {{#robots}}
       <div>
@@ -14,6 +16,8 @@
         {{#job}}
           <p>{{job}}</p>
         {{/job}}
+
+
         {{^job}}
           <p>Available for Hire</p>
         {{/job}}
