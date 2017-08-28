@@ -6,7 +6,7 @@
 
  	<body>
     <div class="people-list">
-      <!-- #users loops/maps thru everything under data.users -->
+      <!-- this goes through the robots.json file -->
     {{#robots}}
       <div>
         <img src="{{avatar}}">
@@ -15,7 +15,7 @@
           <p>{{job}}</p>
         {{/job}}
         {{^job}}
-          <p class="nojob">Available for Hire</p>
+          <p>Available for Hire</p>
         {{/job}}
       </div>
     {{/robots}}
