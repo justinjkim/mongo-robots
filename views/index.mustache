@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<title>MongoDB - LinkedIn for Robots</title>
+ 	</head>
+
+ 	<body>
+    <div class="people-list">
+      <!-- #users loops/maps thru everything under data.users -->
+    {{#robots}}
+      <div>
+        <img src="{{avatar}}">
+        <a href="/index/{{username}}"><h2>{{name}}</h2></a>
+        {{#job}}
+          <p>{{job}}</p>
+        {{/job}}
+        {{^job}}
+          <p class="nojob">Available for Hire</p>
+        {{/job}}
+      </div>
+    {{/robots}}
+  </div>
+ 	</body>
+ </html>
