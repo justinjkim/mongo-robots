@@ -1,3 +1,15 @@
+header p {
+	padding: 5px;
+	border: 1px solid #000;
+	font-weight: bold;
+	display: inline-block;
+	margin: 5px;
+}
+
+header p a {
+	text-decoration: none;
+}
+
 .container {
 	display: flex;
 	flex-wrap: wrap;
@@ -5,7 +17,16 @@
 
 .profile {
 	padding: 10px;
-	text-shadow: 3px 3px 3px #ddd;
-	width: 100px;
-	height: 100px;
+	box-shadow: 3px 3px 3px #ddd;
+	width: 200px;
+	height: 250px;
+	margin: 10px;
+	text-align: center;
+	border: 1px solid #000;
+	transition: background-color 0.4s ease;
 }
+
+.profile:hover {
+	background-color: lightblue;
+}
+
