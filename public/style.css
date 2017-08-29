@@ -1,0 +1,11 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.profile {
+	padding: 10px;
+	text-shadow: 3px 3px 3px #ddd;
+	width: 100px;
+	height: 100px;
+}
